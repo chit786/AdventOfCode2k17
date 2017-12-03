@@ -1,11 +1,17 @@
 package com.aoc;
-
+import java.awt.*;
+import java.awt.geom.Point2D;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
 import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
 import java.io.*;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
+        //boilerplate
         String p = new File("").getAbsolutePath();
         try {
             p.concat("abc");
@@ -27,4 +33,5 @@ public class Main {
             e2.printStackTrace();
         }
     }
+
 }
