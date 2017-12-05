@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Iterator;
 import java.util.Arrays;
 
-public class Main {
+public class Day5 {
     public static void main(String[] args) {
         //boilerplate
         String p = new File("").getAbsolutePath();
@@ -28,10 +28,24 @@ public class Main {
 
             List<Integer> anArray = new ArrayList<Integer>();
             while ((line = br.readLine()) != null) {
-
+                anArray.add(Integer.parseInt(line));
+                index++;
             }
+            int count =0;
+            int a =0;
+            int newPos = 0;
+            while(a < anArray.size()){
+                newPos = anArray.get(a);
+                if(newPos>=3){
+                    anArray.set(a,anArray.get(a) - 1);
+                }else{
+                    anArray.set(a,anArray.get(a) + 1);
+                }
 
-            System.out.println();
+                count++;
+                a = a + newPos;
+            }
+            System.out.println(count);
 
         }
         catch (FileNotFoundException e1) {
