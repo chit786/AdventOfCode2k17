@@ -8,7 +8,7 @@ import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 import java.io.*;
 import java.util.List;
 
-public class Main {
+public class Day8 {
     public static void main(String[] args) {
         //boilerplate
         String p = new File("").getAbsolutePath();
@@ -113,7 +113,7 @@ public class Main {
 
             }
 
-             System.out.println(Collections.max(registers.values()));
+            System.out.println(Collections.max(registers.values()));
             System.out.println(highest);
 
 
